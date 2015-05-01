@@ -1,7 +1,7 @@
 ---
 layout: default
+title: PageXML
 ---
 
-# PageXML
 
 > A standard and polyfill for delivering multi-page content.
