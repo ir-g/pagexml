@@ -5,7 +5,7 @@ layout: default
 <h2>{{page.title}}</h2>
 
   <p class="author">
-    <span class="date">Posted on {{ post.date | date_to_string }} {% if post.author %}by {{post.author}}{% endif %}</span>
+    <span class="date">Posted on {{ page.date | date_to_string }} {% if page.author %}by {{page.author}}{% endif %}</span>
   </p>
 
 {{content}}
