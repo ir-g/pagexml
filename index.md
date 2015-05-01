@@ -2,4 +2,6 @@
 title: PageXML
 ---
 
-A standard and polyfill for delivering multi-page content.
+*A standard and polyfill for delivering multi-page content.*
+
+
