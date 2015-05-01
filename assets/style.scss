@@ -10,9 +10,12 @@ body {
 #main {
   background: white;
   max-width: 600px;
-  text-align: center;
+  text-align: left;
   padding: 1.5em;
   margin: 3em auto 1em;
+}
+.nav {
+  text-align: center;
 }
 h1{
   display: inline; 
