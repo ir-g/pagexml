@@ -3,14 +3,17 @@
 ---
 
 body {
-        background: #f5f5f5;
-        font-family: Helvetica, sans-serif;
-        padding: 0 5%;
-      }
-      #main {
-        background: white;
-        max-width: 600px;
-        text-align: center;
-        padding: 1.5em;
-        margin: 3em auto 1em;
-      }
+  background: #f5f5f5;
+  font-family: Helvetica, sans-serif;
+  padding: 0 5%;
+}
+#main {
+  background: white;
+  max-width: 600px;
+  text-align: center;
+  padding: 1.5em;
+  margin: 3em auto 1em;
+}
+
+a { color: #0096cc; text-decoration: none; }
+a:hover { color: #007199; }
