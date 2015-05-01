@@ -13,7 +13,7 @@
       </div>
       <br />
       <h1>{{site.title}}</h1>
-      <h2>{% if page.altline %}{{ page.altline }}{% else %}{{page.title}}{{ endif }}</h2>
+      <h2>{% if page.is_post %}Blog{% else %}{{page.title}}{{ endif }}</h2>
       <hr />
       {{content}}
       <br />
