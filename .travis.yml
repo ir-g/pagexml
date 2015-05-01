@@ -4,3 +4,7 @@ before_install:
 - travis_retry gem install kramdown
 script: jekyll build --safe
 
+# branch whitelist
+branches:
+  only:
+  - gh-pages 
