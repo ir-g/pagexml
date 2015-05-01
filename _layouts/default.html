@@ -2,9 +2,15 @@
 <html>
   <body>
     <div id="main">
-    {{include header.html}}
-    {{content}}
+      <h1>{{page.title}}</h1>
+      <a href="{{site.url}}/">Home</a>
+      <a href="{{site.url}}/blog">Blog</a>
+      <a href="{{site.url}}/releases">Releases</a>
+      <hr />
+      {{content}}
     </div>
-    <div id="footer">{{include footer.html}}</div>
+    <div id="footer">
+      {{include footer.html}}
+    </div>
   </body>
 </html>
