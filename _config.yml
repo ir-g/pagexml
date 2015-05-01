@@ -15,4 +15,4 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "posts"
+      layout: "post"
