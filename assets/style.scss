@@ -18,15 +18,16 @@ body {
   text-align: center;
 }
 h1{
-  display: inline; 
-  /*float:left;*/
+  display: inline;
   text-align: left;
 }
 h2{
 display:inline;
-text-align: right;
 color:gray;
 }
 
 a { color: #0096cc; text-decoration: none; }
 a:hover { color: #007199; }
+color: #f00;
+background-color: #f00;
+height: 5px;
