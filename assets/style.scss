@@ -22,12 +22,17 @@ h1{
   text-align: left;
 }
 h2{
-display:inline;
-color:gray;
+  display:inline;
+  color:gray;
 }
-
-a { color: #0096cc; text-decoration: none; }
-a:hover { color: #007199; }
-color: #f00;
-background-color: #f00;
-height: 5px;
+a {
+  color: #0096cc; text-decoration: none;
+}
+a:hover { 
+  color: #007199; 
+}
+hr{
+  color: #f00;
+  background-color: #f00;
+  height: 5px;
+}
