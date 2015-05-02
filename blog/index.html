@@ -15,14 +15,14 @@ title: Blog
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous" style="text-align:left">Previous</a>
   {% else %}
-    <span class="previous">Previous</span>
+    <span class="previous disabled-link">Previous</span>
   {% endif %}
   &nbsp;
-  <span class="page_number" style="text-align:center" title="Page: {{ paginator.page }} of {{ paginator.total_pages }}">&bull;</span>
+  <span class="page_number disbaled-link" style="text-align:center" title="Page: {{ paginator.page }} of {{ paginator.total_pages }}">&bull;</span>
   &nbsp;
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next" style="text-align:right">Next</a>
   {% else %}
-    <span class="next ">Next</span>
+    <span class="next disabled-link">Next</span>
   {% endif %}
 </div>
