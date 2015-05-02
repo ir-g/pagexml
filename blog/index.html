@@ -4,13 +4,10 @@ title: Blog
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-  <h2><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h2>
+  <h3><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h3>
   <p class="author">
     <span class="date">Posted on {{ post.date | date_to_string }} {% if post.author %}by {{post.author}}{% endif %}</span>
   </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
 {% endfor %}
 
 <!-- Pagination links -->
