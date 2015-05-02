@@ -1,3 +1,7 @@
+---
+title: License
+---
+```text
                The Artistic License 2.0
 
            Copyright (c) 2015 Isaac Reid-Guest
@@ -200,3 +204,4 @@ BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
 DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+```
