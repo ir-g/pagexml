@@ -25,7 +25,7 @@ Links between internal pages can be created by using the `<a>` tag, with the `in
 
 ### Hello World
 
-```html
+```xml
 <pagexml>
   <page id="main" title="Hello World">
     <content>
@@ -33,4 +33,5 @@ Links between internal pages can be created by using the `<a>` tag, with the `in
       <p>Does this sound familiar?</p>
     </content>
   </page>
+</pagexml>
 ```
