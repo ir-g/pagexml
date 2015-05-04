@@ -1,5 +1,5 @@
 ---
-title: PageXML in progress.
+title: PageXML v0.1 in development.
 author: Isaac Reid-Guest
 ---
 
