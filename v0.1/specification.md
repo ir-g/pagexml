@@ -25,7 +25,7 @@ Links between internal pages can be created by using the `<a>` tag, with the `in
 
 ### Hello World
 
-```xml
+```html
 <pagexml>
   <page id="main" title="Hello World">
     <content>
