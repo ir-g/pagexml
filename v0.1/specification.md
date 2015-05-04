@@ -25,7 +25,8 @@ Links between internal pages can be created by using the `<a>` tag, with the `in
 
 ### Hello World
 
-`{% highlight xml %}
+<!-- Code section start -->
+{% highlight xml %}
 <pagexml>
   <page id="main" title="Hello World">
     <content>
@@ -34,4 +35,5 @@ Links between internal pages can be created by using the `<a>` tag, with the `in
     </content>
   </page>
 </pagexml>
-{% endhighlight %}`
+{% endhighlight %}
+<!-- Code section end-->
