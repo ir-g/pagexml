@@ -2,7 +2,8 @@
 title: Releases
 ---
 
-*PageXML is in very early stages of development, and so at present the [Github repo](https://github.com/isaacrg/pagexml) is where the very latest information and file can be found.*
+*PageXML is in very early stages of development, so please bear with the incompleteness. You could asssist in alleviating the problem by [contributing](https://github.com/isaacrg/pagexml).*
+
 
 ### Versions
 
