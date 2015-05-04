@@ -17,7 +17,7 @@ When embedded within an HTML document, PageXML documents should be wrapped withi
 
 PageXML supports multiple pages, which are contained within `<page>` tags. They can be given a unqiue id with the `id` attribute. They can also be given a title with the `title` attribute. It is reccomended that the page which is going to be loaded first is give the id "main". Each page is made up of two sub-sections, the `<meta>` and `<content>` sections. The `<meta>` section allows for metadata declaration. The `<content>` section allows for content to be declared using a limited HTML standard, though other format types are supported via the use of the `type` attribute. 
 
-Separate parts to an HTML page can be created using the `<part>` tag with a given id, and can then displayed using the `<use>` tag, setting the `part-id` attribute to be the same as the `<part>` you wish to import.
+Separate parts to an HTML page can be created using the `<part>` tag with a given id, and can then displayed using the `<use>` tag, setting the `part-id` attribute to be the same as the `<part>` you wish to import. Each part uses `<meta>` and `<content>` tags like a page.
 
 Links between internal pages can be created by using the `<a>` tag, with the `internal-page` attribute set to the id of the page you wish to use.
 
@@ -31,6 +31,49 @@ Links between internal pages can be created by using the `<a>` tag, with the `in
   <page id="main" title="Hello World">
     <content>
       <h1>Hello World</h1>
+      <p>Does this sound familiar?</p>
+    </content>
+  </page>
+</pagexml>
+{% endhighlight %}
+<!-- Code section end-->
+
+### Multiple pages
+
+<!-- Code section start -->
+{% highlight xml %}
+<pagexml>
+  <page id="main" title="Hello World">
+    <content>
+      <h1>Hello World</h1>
+      <p>Does this sound familiar? Click <a internal-page="about">here</a>.</p>
+    </content>
+  </page>
+  <page id="about" title="Hello World">
+    <content>
+      <h1>About</h1>
+      <p>Click <a internal-page="main">here</p> to go back.</p>
+    </content>
+  </page>
+</pagexml>
+{% endhighlight %}
+<!-- Code section end-->
+
+### Using `<parts>`
+
+<!-- Code section start -->
+{% highlight xml %}
+<pagexml>
+  <part id="message">
+    <content>
+      This is a familar message.
+    </content>
+  </part>
+  <page id="main" title="Hello World">
+    <content>
+      <h1>Hello World</h1>
+      <!-- Parts are reusable -->
+      <use part-id="message"/>
       <p>Does this sound familiar?</p>
     </content>
   </page>
