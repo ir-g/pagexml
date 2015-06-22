@@ -9,9 +9,9 @@
   <body>
     <div id="main">
       <div class="nav">
-        <a href="{{site.url}}/">Home</a> &bull;
-        <a href="{{site.url}}/blog">Blog</a> &bull;
-        <a href="{{site.url}}/releases">Releases</a>
+        {% for item in site.menu %}  
+        <a href="{{site.baseurl}}{{ item.url }}">{{ item.title }}</a> {% unless forloop.last %}&bull;{% endunless %}
+        {% endfor %}
       </div>
       <br />
       <h1>{{site.title}}</h1>
