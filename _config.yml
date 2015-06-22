@@ -14,6 +14,12 @@ menu:
     title: Releases
     url: /releases
 
+# Github data
+
+github:
+  repo: isaacrg/pagexml
+  branch: gh-pages
+
 # Build settings
 markdown:     kramdown
 highlighter: pygments
