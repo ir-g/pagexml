@@ -1,6 +1,18 @@
 title: pageXML
 url: "http://isaacrg.me/pagexml"
 
+# MENU
+
+menu:
+  -
+    title: Home 
+    url: /
+  - 
+    title: Blog
+    url: /blog
+  -
+    title: Releases
+    url: /releases
 
 # Build settings
 markdown:     kramdown
