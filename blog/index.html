@@ -3,26 +3,9 @@ title: Blog
 ---
 
 <!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
+{% for post in site.posts %}
   <h3><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></h3>
   <p class="author">
     <span class="date">Posted on {{ post.date | date_to_string }} {% if post.author %}by {{post.author}}{% endif %}</span>
   </p>
 {% endfor %}
-
-<!-- Pagination links -->
-<div class="pagination nav">
-  {% if paginator.previous_page %}
-    <a href="{{site.url}}{{ paginator.previous_page_path }}" class="previous" style="text-align:left">Previous</a>
-  {% else %}
-    <span class="previous disabled-link">Previous</span>
-  {% endif %}
-  &nbsp;
-  <span class="page_number disbaled-link" style="text-align:center" title="Page: {{ paginator.page }} of {{ paginator.total_pages }}">&bull;</span>
-  &nbsp;
-  {% if paginator.next_page %}
-    <a href="{{site.url}}{{ paginator.next_page_path }}" class="next" style="text-align:right">Next</a>
-  {% else %}
-    <span class="next disabled-link">Next</span>
-  {% endif %}
-</div>
