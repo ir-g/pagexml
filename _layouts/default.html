@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title and page.title != site.title %}{{ page.title }} &bull; {% endif %}{{ site.title }}</title>
+    <title>{{ site.title }}{% if page.title and page.title != site.title %} &bull; {{ page.title }}{% endif %}</title>
     <link href="{{site.url}}/assets/style.css" media="all" rel="stylesheet" />
     <link href="{{site.url}}/assets/pygments.css" media="all" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
