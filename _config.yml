@@ -9,7 +9,7 @@ menu:
     url: /
   - 
     title: Blog
-    url: /blog
+    url: /blog/
   -
     title: Releases
     url: /releases
