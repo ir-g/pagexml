@@ -1,6 +1,5 @@
 ---
 title: Blog
-permalink: /blog
 ---
 
 <!-- This loops through the posts -->
