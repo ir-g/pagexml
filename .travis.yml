@@ -5,6 +5,7 @@ rvm:
 before_install:
 - travis_retry gem install jekyll
 - travis_retry gem install kramdown
+- travis_retry gem install pygments
 script:
 - jekyll build --safe
 - "find ./_site -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
