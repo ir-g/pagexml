@@ -1,9 +1,18 @@
+sudo: false
 language: ruby
+rvm:
+  - 2.0.0
 before_install:
 - travis_retry gem install jekyll
 - travis_retry gem install kramdown
-script: jekyll build --safe
-
+script:
+- jekyll build --safe
+- "find ./_site -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+notifications:
+  email:
+    on_success: change # default: change
+    on_failure: change # default: always
+    
 # branch whitelist
 branches:
   only:
