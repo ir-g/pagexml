@@ -17,7 +17,7 @@ menu:
 # Github data
 
 github:
-  repo: isaacrg/pagexml
+  repo: ir-g/pagexml
   branch: gh-pages
 
 # Build settings
